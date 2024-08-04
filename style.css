@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Lovelo";
+  src: url("./fonts/Lovelo.otf") format("opentype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  background-color: #101820;
+  color: #f0f0f0;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  background-color: #0d6efd;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #ffffff !important;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-dark {
+  background-color: #101820;
+}
+
+.section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+  animation: fadeIn 2s;
+}
+
+.font-lovelo {
+  font-family: "Lovelo", sans-serif;
+}
+.rsvp {
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.font-color-section1 {
+  color: #cccccc;
+}
+
+.footer {
+  background-color: #9b9b9b3d;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.icon {
+  font-size: 2rem;
+  margin: 10px;
+  color: #0d6efd;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #0056b3;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.button {
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
