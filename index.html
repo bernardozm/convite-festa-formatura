@@ -17,6 +17,7 @@
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
   </head>
   <body>
     <!-- Seção 1: Informações sobre o convite -->
@@ -30,6 +31,7 @@
         <img src="./ufsc.svg" style="max-height: 25vh" />
         <!-- <img src="./ine.png" style="max-height: 25vh" /> -->
       </div>
+      <div id="tsparticles"></div>
     </section>
 
     <!-- Seção 2: Imagem -->
@@ -90,6 +92,30 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        confetti({
+          spread: 100,
+          ticks: 1,
+          gravity: 0.5,
+          decay: 0.94,
+          startVelocity: 30,
+          particleCount: 150,
+          scalar: 3,
+          shapes: ["image"],
+          shapeOptions: {
+            image: [
+              {
+                src: "image.png",
+                width: 100,
+                height: 100,
+              },
+            ],
+          },
+        });
+      });
+    </script>
     <script src="scripts.js"></script>
   </body>
 </html>
