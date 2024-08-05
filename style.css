@@ -13,10 +13,10 @@ body {
 
 #imagem {
   background-image: none; /* Inicialmente sem imagem de fundo */
-  background-size: cover; /* Ajusta para cobrir toda a área */
+  background-size: contain; /* Ajusta a imagem para ser totalmente visível */
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  height: 100vh; /* Usa a altura total da viewport */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +39,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -131,12 +131,4 @@ body {
 .button:hover {
   background-color: #0056b3;
   transform: translateY(-3px);
-}
-
-/* Adjust height for smaller devices */
-@media (max-width: 768px) {
-  #imagem {
-    /* height: auto; */
-    /* min-height: 80vh;  */
-  }
 }

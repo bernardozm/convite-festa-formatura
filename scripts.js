@@ -39,8 +39,6 @@ document.addEventListener("DOMContentLoaded", function() {
     entries.forEach(entry => {
       if (entry.intersectionRatio >= 0.5) {
         section.classList.add("visible");
-      } else {
-        section.classList.remove("visible");
       }
     });
   }, { threshold: 0.5 });
