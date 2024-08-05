@@ -31,3 +31,19 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+document.addEventListener("DOMContentLoaded", function() {
+  const section = document.querySelector("#imagem");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.intersectionRatio >= 0.5) {
+        section.classList.add("visible");
+      } else {
+        section.classList.remove("visible");
+      }
+    });
+  }, { threshold: 0.5 });
+
+  observer.observe(section);
+});

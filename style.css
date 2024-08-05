@@ -11,6 +11,46 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+#imagem {
+  background-image: none; /* Inicialmente sem imagem de fundo */
+  background-size: cover; /* Ajusta para cobrir toda a área */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  transition: opacity 1s ease-in-out; /* Transição suave para a opacidade */
+  opacity: 0; /* Inicialmente invisível */
+}
+
+#imagem.visible {
+  opacity: 1; /* Torna a seção visível */
+  background-image: url("./background.JPG"); /* Adiciona a imagem de fundo quando a seção está visível */
+}
+
+#imagem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+#imagem .mt-3 {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  padding: 20px;
+  max-width: 100%;
+}
+
 .navbar {
   background-color: #0d6efd;
 }
@@ -40,12 +80,14 @@ body {
 .font-lovelo {
   font-family: "Lovelo", sans-serif;
 }
+
 .rsvp {
   font-weight: bold;
   color: #ffffff;
   text-decoration: underline;
   cursor: pointer;
 }
+
 .font-color-section1 {
   color: #cccccc;
 }
@@ -89,4 +131,12 @@ body {
 .button:hover {
   background-color: #0056b3;
   transform: translateY(-3px);
+}
+
+/* Adjust height for smaller devices */
+@media (max-width: 768px) {
+  #imagem {
+    /* height: auto; */
+    /* min-height: 80vh;  */
+  }
 }
