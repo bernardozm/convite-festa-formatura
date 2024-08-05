@@ -91,7 +91,13 @@ body {
 .font-color-section1 {
   color: #cccccc;
 }
-
+.light-section {
+  background-color: #f0f0f0;
+}
+.text-dark {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+}
 .footer {
   background-color: #9b9b9b3d;
   color: #ffffff;
