@@ -94,9 +94,8 @@ body {
 .light-section {
   background-color: #f0f0f0 !important;
 }
-.text-dark {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+.text-color-dark {
+  color: #212529;
 }
 .footer {
   background-color: #9b9b9b3d;
