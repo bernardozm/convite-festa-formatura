@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
-  background-color: #101820;
+  background-color: #060e18;
   color: #f0f0f0;
   font-family: "Roboto", sans-serif;
 }
@@ -39,7 +39,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.2); */
   z-index: 1;
 }
 
@@ -66,7 +66,7 @@ body {
 }
 
 .section-dark {
-  background-color: #101820;
+  background-color: #060e18;
 }
 
 .section img {

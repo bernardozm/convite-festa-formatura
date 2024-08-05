@@ -36,10 +36,26 @@
 
     <!-- Seção 2: Imagem -->
     <section id="imagem" class="section">
+      <!-- <div class="mt-3">
+        <p>
+          Depois de alguns anos de UFSC chegou a hora de comemorar o fechamento
+          de um grande ciclo.
+        </p>
+        <p>
+          Esta trajetória acadêmica não teria sido tão especial se não fosse
+          pelas pessoas com quem compartilhei cada momento.
+        </p>
+        <p>
+          Por isso, é com grande alegria que convido você para comemorar a minha
+          formatura.
+        </p>
+      </div> -->
+    </section>
+    <section class="section">
       <div class="mt-3">
         <p>
           Depois de alguns anos de UFSC chegou a hora de comemorar o fechamento
-          de um grande ciclo vivido.
+          de um grande ciclo.
         </p>
         <p>
           Esta trajetória acadêmica não teria sido tão especial se não fosse
@@ -97,11 +113,11 @@
       document.addEventListener("DOMContentLoaded", function () {
         confetti({
           spread: 100,
-          ticks: 1,
-          gravity: 0.5,
-          decay: 0.94,
+          ticks: 10,
+          gravity: 0.1,
+          decay: 0.92,
           startVelocity: 30,
-          particleCount: 200,
+          particleCount: 150,
           scalar: 4,
           shapes: ["image"],
           shapeOptions: {
@@ -122,6 +138,44 @@
               //   height: 100,
               // },
             ],
+          },
+          origin: {
+            x: 0.1, // Emissor no lado esquerdo
+            y: 0.5, // No meio verticalmente
+          },
+        });
+
+        confetti({
+          spread: 100,
+          ticks: 10,
+          gravity: 0.1,
+          decay: 0.92,
+          startVelocity: 30,
+          particleCount: 150,
+          scalar: 4,
+          shapes: ["image"],
+          shapeOptions: {
+            image: [
+              {
+                src: "image.png",
+                width: 100,
+                height: 100,
+              },
+              {
+                src: "atctc.png",
+                width: 100,
+                height: 100,
+              },
+              // {
+              //   src: "a5.png",
+              //   width: 100,
+              //   height: 100,
+              // },
+            ],
+          },
+          origin: {
+            x: 0.9, // Emissor no lado direito
+            y: 0.5, // No meio verticalmente
           },
         });
       });
