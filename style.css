@@ -92,7 +92,7 @@ body {
   color: #cccccc;
 }
 .light-section {
-  background-color: #f0f0f0;
+  background-color: #f0f0f0 !important;
 }
 .text-dark {
   --bs-text-opacity: 1;
